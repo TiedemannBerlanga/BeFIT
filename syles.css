@@ -1,0 +1,1160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(white, #FFC8E8);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    background-image: url("IMG/Befitlogo-04.png");
+    background-repeat: no-repeat;
+    width: 7.4375rem;
+    height: 2.6875rem;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+    padding: 1.5%;
+    margin: 0 auto;
+}
+
+.encabezado {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+}
+
+.encabezado,
+.encabezado a {
+    background-color: white;
+    color: black;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-h {
+    display: none;
+}
+
+#menu-h:target {
+    display: block;
+}
+
+li :hover {
+    color: #FFC8E8;
+}
+
+.lg {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1, 1rem;
+    border-bottom: 0.125rem solid black;
+}
+
+h3 {
+    text-transform: capitalize;
+    margin-top: 0rem;
+    margin-left: 0.9375rem;
+}
+
+#verde {
+    color: #74D052;
+    /*---linea tipo subrayado---*/
+    border-bottom: 0.125rem solid #74D052;
+}
+
+#turquesa {
+    color: #00E4E6;
+    /*---linea tipo subrayado---*/
+    border-bottom: 0.125rem solid #00E4E6;
+}
+
+#fucsia {
+    color: #FF2FAA;
+    /*---linea tipo subrayado---*/
+    border-bottom: 0.125rem solid #FF2FAA;
+}
+
+.fotorama {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+/*---sección "befit"---*/
+.infobefit1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: 0.625rem;
+}
+
+.infobefit1 figure {
+    display: flex;
+    justify-content: center;
+}
+
+.infobefit1 p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.infobefit2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: 0.625rem;
+}
+
+.infobefit2 figure {
+    display: flex;
+    justify-content: center;
+}
+
+.infobefit2 p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+/*---sección "workouts"---*/
+.workouts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.9375rem;
+    width: auto;
+}
+
+.workouts p {
+    font-size: 0.9375rem;
+    margin: 0.9375rem;
+}
+
+.parrafoyboton {
+    width: 25rem;
+}
+
+.informacion {
+    border-radius: 1.25rem;
+    width: auto;
+    height: auto;
+    margin-top: 0.3125rem;
+    margin-left: 0.9375rem;
+    background: none;
+}
+
+.informacion a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    margin: 0.1875rem;
+    font-size: 1.0032rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.informacion:hover {
+    color: #FF2FAA;
+}
+
+/*---sección "recetas"---*/
+.receta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 50%;
+}
+
+.receta figcaption {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.recetas {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#masrecetas {
+    display: flex;
+    justify-content: center;
+}
+
+.botonmr {
+    border-radius: 1.25rem;
+    width: auto;
+    height: auto;
+    margin-top: 0.3125rem;
+    background: none;
+}
+
+.botonmr a {
+    color: black;
+    text-decoration: none;
+    padding: 0.1875rem;
+    border-radius: 1.25rem;
+    margin: 0.1875rem;
+    font-size: 1.0032rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.botonmr :hover {
+    color: whitesmoke;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video .reel1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+}
+
+.video2 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-top: 1rem;
+}
+
+.video2 .reel2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*seccion SOBRE NOSOTRAS*/
+.entrenadoras {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    justify-content: space-around;
+    width: 62%;
+    margin: auto;
+}
+
+.entrenadoras figure {
+    text-align: center;
+}
+
+.nosotras {
+    display: flex;
+    flex-wrap: wrap;
+    width: 62%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.nosotras figure {
+    text-align: center;
+}
+
+.unidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: 0.625rem;
+}
+
+.unidas figure {
+    display: flex;
+    justify-content: center;
+}
+
+.nuestroproposito {
+    flex-direction: row-reverse;
+    padding: 0.625rem;
+}
+
+.nuestroproposito figure {
+    display: flex;
+    justify-content: center;
+}
+
+/*------form*-------*/
+label {
+    display: block;
+    margin: .5rem 0;
+}
+
+fieldset {
+    border-radius: 1.5rem;
+    background-color: white;
+    border-width: 0;
+}
+
+legend {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+#nombres,
+#apellido,
+#email,
+#mensaje {
+    display: block;
+    margin: .5rem 0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 0;
+    outline: none;
+    background-color: #fbecf6;
+    width: 100%;
+}
+
+#nombres :focus,
+#apellido :focus,
+#email :focus,
+#mensaje :focus {
+    background-color: black;
+    color: white;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+button {
+    border-radius: 1.25rem;
+    border-color: white;
+    background-color: white;
+    display: inline-block;
+    width: 6rem;
+    height: 2rem;
+    margin: 0,5rem;
+    font-size: 1.12rem;
+}
+
+.btn-enviar {
+    background-color: #74D052;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-borrar {
+    background-color: #FF2FAA;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*---footer---*/
+.footer {
+    background-image: url("IMG/befitfooter2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.suscribirsefooter {
+    border-radius: 1.25rem;
+    width: auto;
+    height: auto;
+    margin-top: 1.4375rem;
+    background: none;
+    /*---para que quede centrado el texto del botón---*/
+    display: flex;
+    justify-content: center;
+}
+
+.suscribirsefooter a {
+    color: black;
+    text-decoration: none;
+    padding: 0.1875rem;
+    border-radius: 1.25rem;
+    margin: 0.1875rem;
+    font-size: 1.0032rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.9375rem;
+
+}
+
+.contacto li {
+    margin-right: 0.625rem;
+}
+
+.contacto a {
+    color: black;
+    font-size: 1.875rem;
+    margin: 0 0.3125rem;
+}
+
+.contacto a:hover {
+    color: #d449d6;
+}
+
+.copy {
+    text-align: center;
+}
+
+/*--- fin footer---*/
+
+
+.recetas figcaption {
+    margin: auto;
+}
+
+.recetas figure {
+    text-align: center;
+}
+
+/*----------fin celulares---------------------------------------------------------------------------------------------------*/
+@media (min-width:768px) {
+
+    .container {
+        width: 720px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(white, #BDF8F8);
+    }
+
+    .d-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu-h {
+        display: none;
+    }
+
+    #menu-h:target {
+        display: block;
+    }
+
+    li :hover {
+        color: #7bf0f1;
+    }
+
+    .lg {
+        display: none;
+    }
+
+    .fotorama {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        background-image: url("IMG/Befitlogo-04.png");
+        background-repeat: no-repeat;
+        width: 7.4375rem;
+        height: 2.6875rem;
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        text-indent: -999999px;
+    }
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 2rem;
+        /*---linea tipo subrayado---*/
+        border-bottom: 0.125rem solid black;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    /*---sección "befit"---*/
+    .infobefit1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        width: 100%;
+        padding: 1.125rem;
+    }
+
+    .infobefit1 figure {
+        align-items: flex-start;
+    }
+
+    .infobefit1 p {
+        width: 100%;
+        font-size: 0.9375rem;
+        margin-top: 0;
+        margin-left: 0.4375rem;
+        margin-bottom: 0.4375rem;
+    }
+
+    .infobefit2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        width: 100%;
+        padding: 0.625rem;
+    }
+
+    .infobefit2 figure {
+        align-items: flex-start;
+    }
+
+    .infobefit2 p {
+        width: 100%;
+        font-size: 0.9375rem;
+        margin-top: 0;
+        margin-right: 0.4375rem;
+        margin-bottom: 0.4375rem;
+    }
+
+    .textito {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 93%;
+    }
+
+    .befitcontenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /*---sección "workouts"---*/
+    .parrafoyboton {
+        width: 28.125rem;
+    }
+
+    .parrafoyboton h3 {
+        font-size: 1.5625rem;
+    }
+
+    .workouts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0.9375rem;
+        width: auto;
+    }
+
+    .workouts p {
+        font-size: 0.9196rem;
+        margin-left: 0.9375rem;
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .informacion:hover {
+        color: #00E4E6;
+    }
+
+    /*---sección "recetas"---*/
+    .receta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.625rem;
+        width: 33%;
+    }
+
+    .receta figcaption {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 70%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .recetas {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    #masrecetas {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonmr {
+        border-radius: 1.25rem;
+        width: auto;
+        height: auto;
+        margin-top: 0.3125rem;
+        background: none;
+    }
+
+    .botonmr a {
+        color: black;
+        text-decoration: none;
+        padding: 0.1875rem;
+        border-radius: 1.25rem;
+        margin: 0.1875rem;
+        font-size: 1.0032rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .botonmr :hover {
+        color: #FFC8E8;
+    }
+
+    /*seccion videos*/
+
+    .proyectos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .video2 {
+        width: 47%;
+        padding-bottom: 26.22%;
+    }
+
+    /*seccion SOBRE NOSOTRAS*/
+
+    .entrenadoras {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nosotras {
+        display: flex;
+        flex-wrap: wrap;
+        width: 62%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+        justify-content: space-evenly;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    .unidas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        width: 100%;
+        padding: 1.125rem;
+    }
+
+    .unidas figure {
+        align-items: flex-start;
+    }
+
+    .unidas div {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-left: 0.625rem;
+    }
+
+    .nuestroproposito {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+
+        width: 100%;
+        padding: 0.625rem;
+    }
+
+    .nuestroproposito figure {
+        align-items: flex-start;
+    }
+
+    .nuestroproposito div {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-right: 0.625rem;
+    }
+
+    .sobrenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .textito p{
+        margin-top: 0;
+    }
+
+    .btn-enviar {
+        background-color: #00E4E6;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #nombres,
+    #apellido,
+    #email,
+    #mensaje {
+    display: block;
+    margin: .5rem 0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 0;
+    outline: none;
+    background-color: #e6fbfb;
+    width: 100%;
+    }
+}
+
+/*-----------fin tablet------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:1200px) {
+
+    .container {
+        width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(white, #B9E7A8);
+    }
+
+    .sm {
+        display: none;
+    }
+
+    .lg {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lg a {
+        margin-left: 0.625rem;
+    }
+
+    #menu {
+        width: 70%;
+        margin-right: 0.625rem;
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #menu a:hover {
+        color: #8dce64;
+    }
+
+    .fotorama {
+        display: flex;
+        justify-content: center;
+        padding-top: 5.625rem;
+        /*bloque que muestra*/
+    }
+
+    .logo {
+        background-image: url("IMG/Befitlogo-04.png");
+        background-repeat: no-repeat;
+        width: 7.4375rem;
+        height: 2.6875rem;
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        text-indent: -999999px;
+    }
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 2rem;
+        /*---linea tipo subrayado---*/
+        border-bottom: 0.125rem solid black;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    /*---sección "befit"---*/
+    .infobefit1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        width: 100%;
+        padding: 1.125rem;
+    }
+
+    .infobefit1 figure {
+        align-items: flex-start;
+    }
+
+    .infobefit1 p {
+        width: 92%;
+        font-size: 1.125rem;
+        margin-top: 0;
+        margin-left: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .infobefit2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+
+        width: 100%;
+        padding: 1.125rem;
+    }
+
+    .infobefit2 figure {
+        align-items: flex-start;
+    }
+
+    .infobefit2 p {
+        width: 92%;
+        font-size: 1.125rem;
+        margin-top: 0;
+        margin-right: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .textito {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 55%;
+    }
+
+    .befitcontenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .befitcontenedor figure {
+        width: 30%;
+    }
+
+    /*---sección "workouts"---*/
+    .workouts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0.9375rem;
+        width: 23%;
+    }
+
+    .workouts p {
+        font-size: 0.9196rem;
+        margin-left: 0.3125rem;
+        width: 95%;
+        text-align: left;
+    }
+
+    .parrafoyboton {
+        width: 16.875rem;
+        text-align: center;
+    }
+
+    h2 {
+        margin-left: 0.3125rem;
+    }
+
+    .informacion {
+        border-radius: 1.25rem;
+        width: auto;
+        height: auto;
+        margin-top: 0.3125rem;
+        margin: 0;
+        background: none;
+    }
+
+    .workoutdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .informacion:hover {
+        color: #74D052;
+    }
+
+    /*---sección "recetas"---*/
+    .receta {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0, 5rem;
+        width: 18%;
+        margin-bottom: 0.625rem;
+    }
+
+    .receta figcaption {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 70%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .recetas {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    #masrecetas {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonmr {
+        border-radius: 1.25rem;
+        width: auto;
+        height: auto;
+        margin-top: 1rem;
+        background: none;
+    }
+
+    .botonmr a {
+        color: black;
+        text-decoration: none;
+        padding: 0.1875rem;
+        border-radius: 1.25rem;
+        margin: 0.1875rem;
+        font-size: 1.0032rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .botonmr :hover {
+        color: #FFC8E8;
+    }
+
+    /*seccion videos*/
+    .proyectos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .video2 {
+        width: 47%;
+        padding-bottom: 26.22%;
+    }
+
+    /*---sección "sobre nosotras"---*/
+    .nosotras {
+        width: 44%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .unidas {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        width: 100%;
+        padding: 1.125rem;
+    }
+
+    .unidas figure {
+        align-items: flex-start;
+    }
+
+    .unidas p {
+        width: 92%;
+        font-size: 1.125rem;
+        margin-top: 0;
+        margin-left: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .nuestroproposito {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+
+        width: 100%;
+        padding: 1.125rem;
+    }
+
+    .nuestroproposito figure {
+        align-items: flex-start;
+    }
+
+    .nuestroproposito p {
+        width: 92%;
+        font-size: 1.125rem;
+        margin-top: 0;
+        margin-right: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .textito {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 55%;
+    }
+
+    .sobrenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .sobrenos figure {
+        width: 30%;
+    }
+
+    #nombres,
+    #apellido,
+    #email,
+    #mensaje {
+        display: block;
+        margin: .5rem 0;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        border: 0;
+        outline: none;
+        background-color: #e4f4dc;
+        width: 100%;
+    }
+
+    .btn-enviar {
+        background-color: #74D052;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
